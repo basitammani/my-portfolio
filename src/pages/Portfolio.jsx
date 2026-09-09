@@ -23,7 +23,17 @@ function Portfolio() {
       technologies: ["React", "Tailwind CSS", "Vite"],
       category: "Template",
       liveDemo: "https://react-template-one-vert.vercel.app/",
-      github: "#"
+      github: "https://github.com/basitammani/React-template"
+    },
+    {
+      id: 3,
+      title: "Tic-Tac Game",
+      description: "A fun and interactive Tic-Tac game built with a clean interface, responsive layout, and engaging gameplay for quick browser-based play.",
+      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      technologies: ["React", "Vite", "Tailwind CSS"],
+      category: "Game",
+      liveDemo: "https://tic-tac-game-gray-sigma.vercel.app/",
+      github: "https://github.com/basitammani/Tic-Tac-Game"
     },
  
   ]

@@ -6,7 +6,7 @@ function Home() {
   const skills = [
     { name: 'React', percentage: 95 },
     { name: 'JavaScript', percentage: 90 },
-    { name: 'Tailwind CSS', percentage: 92 },
+    { name: 'Tailwind CSS', percentage: 95 },
     { name: 'Bootstrap', percentage: 88 },
     { name: 'Ant Design', percentage: 85 }
   ]
