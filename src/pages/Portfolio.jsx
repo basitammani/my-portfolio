@@ -39,7 +39,7 @@ function Portfolio() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-black opacity-50"></div>

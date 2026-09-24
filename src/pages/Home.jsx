@@ -16,7 +16,7 @@ function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Animated Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+        <div className="absolute inset-0 bg-linear-to-br from-gray-900 via-gray-800 to-black">
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute top-0 left-0 w-full h-full">
             {/* Animated particles */}
