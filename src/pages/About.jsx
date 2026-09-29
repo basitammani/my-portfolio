@@ -10,7 +10,7 @@ function About() {
                 <div className="container mx-auto px-4 max-w-6xl">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl font-bold mb-4 text-white">About Me</h2>
-                        <p className="text-xl text-gray-300 max-w-2xl mx-auto">I’m a frontend developer focused on building responsive, modern, and user-friendly web interfaces using React, JavaScript, Tailwind CSS, Bootstrap, and Ant Design.</p>
+                        <p className="text-xl text-gray-300 max-w-2xl mx-auto">I’m a frontend developer focused on building responsive, modern, and user-friendly web interfaces using Next.js, React, JavaScript, Tailwind CSS, Bootstrap, and Ant Design.</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 p-1">
@@ -47,7 +47,7 @@ function About() {
                                         <FaUsers />
                                     </div>
                                     <h4 className="text-2xl font-bold mb-4 text-white">Core Skills</h4>
-                                    <p className="text-gray-300 leading-relaxed">React, JavaScript, Tailwind CSS, Bootstrap, and Ant Design are the main tools I use to build strong frontend experiences.</p>
+                                    <p className="text-gray-300 leading-relaxed">Next.js, React, JavaScript, Tailwind CSS, Bootstrap, and Ant Design are the main tools I use to build strong frontend experiences.</p>
                                 </div>
                             </div>
                         </div>
