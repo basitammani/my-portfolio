@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom'
 function Home() {
 
   const skills = [
+     { name: 'Next.js', percentage: 80 },
     { name: 'React', percentage: 95 },
     { name: 'JavaScript', percentage: 90 },
     { name: 'Tailwind CSS', percentage: 95 },
     { name: 'Bootstrap', percentage: 88 },
     { name: 'Ant Design', percentage: 85 }
+   
   ]
 
   return (

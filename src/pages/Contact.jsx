@@ -61,7 +61,7 @@ function Contact() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="min-h-screen bg-linear-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Notification Toast */}
       {notification && (
         <div className={`fixed top-4 right-4 z-50 max-w-md w-full mx-auto transform transition-all duration-300 ease-in-out ${
@@ -73,7 +73,7 @@ function Contact() {
               : 'bg-gray-800 border-red-400 text-white'
           }`}>
             <div className="flex items-center">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 {notification.type === 'success' ? (
                   <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
