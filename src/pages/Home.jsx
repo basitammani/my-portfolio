@@ -74,7 +74,7 @@ function Home() {
                 My core strengths are in JavaScript, React, Tailwind CSS, Bootstrap, and Ant Design, where I create interfaces that are fast, reliable, and easy to use.
               </p>
               <div className="flex flex-wrap gap-3 mt-6">
-                {['React', 'JavaScript', 'Tailwind CSS', 'Bootstrap', 'Ant Design'].map((tech, index) => (
+                {['Next.js', 'React', 'JavaScript', 'Tailwind CSS', 'Bootstrap', 'Ant Design'].map((tech, index) => (
                   <span key={index} className="bg-gray-700 text-red-400 px-3 py-1 rounded-full text-sm">
                     {tech}
                   </span>
