@@ -150,7 +150,7 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold">Email</h3>
-                    <a href={`mailto:${basitammani@gmail.com}`} className="text-gray-400 hover:text-white transition-colors">
+                    <a href="mailto:basitammani@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                       basitammani@gmail.com
                     </a>
                   </div>
@@ -164,7 +164,7 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold">Phone</h3>
-                    <p className="text-gray-400">03469169722</p>
+                    <a href="tel:03469169722" className="text-gray-400 hover:text-white transition-colors">03469169722</a>
                   </div>
                 </div>
 
@@ -177,7 +177,7 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold">Location</h3>
-                    <p className="text-gray-400">Gilgit</p>
+                    <p className="text-gray-400">Gilgit Baltistan</p>
                   </div>
                 </div>
               </div>
