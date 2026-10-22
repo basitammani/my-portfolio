@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 function Contact() {
+  const contactEmail = import.meta.env.VITE_CONTACT_EMAIL?.trim()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,7 +14,7 @@ function Contact() {
 
   const showNotification = (message, type = 'success') => {
     setNotification({ message, type })
-    setTimeout(() => setNotification(null), 5000) // Auto-hide after 5 seconds
+    setTimeout(() => setNotification(null), 5000) 
   }
 
   const handleChange = (e) => {
@@ -25,21 +26,30 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
+    if (!contactEmail) {
+      showNotification('Contact form is not configured yet. Please try again later.', 'error')
+      return
+    }
+
     setIsSubmitting(true)
     
     try {
-      const response = await fetch('/api/user/create', {
+      const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(contactEmail)}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          Accept: 'application/json',
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          ...formData,
+          _subject: formData.subject,
+        })
       })
 
-      if (response.ok) {
-        const result = await response.json()
-        
-        // Reset form on success
+      const result = await response.json()
+
+      if (response.ok && result.success !== false && result.success !== 'false') {
         setFormData({
           name: '',
           email: '',
@@ -49,8 +59,7 @@ function Contact() {
         
         showNotification('Message sent successfully! We\'ll get back to you soon.', 'success')
       } else {
-        const error = await response.json()
-        showNotification(error.message || 'Failed to send message', 'error')
+        showNotification(result.message || 'Failed to send message', 'error')
       }
     } catch (error) {
       console.error('Error submitting form:', error)
@@ -141,7 +150,9 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold">Email</h3>
-                    <p className="text-gray-400">contact@example.com</p>
+                    <a href={`mailto:${basitammani@gmail.com}`} className="text-gray-400 hover:text-white transition-colors">
+                      basitammani@gmail.com
+                    </a>
                   </div>
                 </div>
 
@@ -153,7 +164,7 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold">Phone</h3>
-                    <p className="text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-gray-400">03469169722</p>
                   </div>
                 </div>
 
@@ -166,7 +177,7 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold">Location</h3>
-                    <p className="text-gray-400">New York, NY</p>
+                    <p className="text-gray-400">Gilgit</p>
                   </div>
                 </div>
               </div>

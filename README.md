@@ -14,3 +14,13 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Contact Form Email Setup
+
+The contact form sends submissions through [FormSubmit](https://formsubmit.co/). Create a `.env.local` file in the project root with the inbox that should receive messages:
+
+```env
+VITE_CONTACT_EMAIL=you@example.com
+```
+
+Restart the Vite server after adding the variable. On the first submission, FormSubmit sends a confirmation email to that inbox; confirm it before expecting messages to be delivered. This address is public in the browser app, so use an inbox intended for public contact requests.
