@@ -8,9 +8,9 @@ function Portfolio() {
     {
       id: 1,
       title: "React Final Project",
-      description: "A React-based frontend project showcasing modern UI development, responsive layouts, and reusable components.",
+      description: "A React-based frontend project showcasing modern UI development, Redux Toolkit, responsive layouts, and reusable components.",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      technologies: ["React", "Ant Design", "JavaScript"],
+      technologies: ["React", "Ant Design","Redux Toolkit", "JavaScript"],
       category: "Frontend Project",
       liveDemo: "https://react-final-project-ibcn.vercel.app/",
       github: "https://github.com/basitammani/React-Final-Project"
