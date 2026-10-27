@@ -23,7 +23,7 @@ function Portfolio() {
       technologies: ["Product Configurator", "E-commerce", "Responsive Design"],
       category: "Web Application",
       liveDemo: "https://project-1-orpin-eight.vercel.app/",
-      github: null
+      github: "https://github.com/basitammani/Project-1"
     },
     {
       id: 3,
