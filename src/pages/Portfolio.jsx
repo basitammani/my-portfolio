@@ -20,7 +20,7 @@ function Portfolio() {
       title: "Home Security System Builder",
       description: "An interactive home security configurator for choosing cameras, plans, sensors, and accessories and building a personalized system.",
       image: "https://www.wyze.com/cdn/shop/files/wyze-cam-v4-wyze-labs-inc-5186547.png?v=1762447655",
-      technologies: ["Product Configurator", "E-commerce", "Responsive Design"],
+      technologies: ["Product Configurator", "E-commerce", "Responsive Design", "Redux Toolkit"],
       category: "Web Application",
       liveDemo: "https://project-1-orpin-eight.vercel.app/",
       github: "https://github.com/basitammani/Project-1"

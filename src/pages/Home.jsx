@@ -9,7 +9,8 @@ function Home() {
     { name: 'JavaScript', percentage: 90 },
     { name: 'Tailwind CSS', percentage: 95 },
     { name: 'Bootstrap', percentage: 88 },
-    { name: 'Ant Design', percentage: 85 }
+    { name: 'Ant Design', percentage: 85 },
+    {name: 'Redux Toolkit', percentage: 80}
    
   ]
 
@@ -71,10 +72,10 @@ function Home() {
                 I enjoy turning business ideas into clean, functional, and visually polished experiences using React and modern frontend tools.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                My core strengths are in JavaScript, React, Tailwind CSS, Bootstrap, and Ant Design, where I create interfaces that are fast, reliable, and easy to use.
+                My core strengths are in JavaScript, React,Next.js,Redux Toolkit, Tailwind CSS, Bootstrap, and Ant Design, where I create interfaces that are fast, reliable, and easy to use.
               </p>
               <div className="flex flex-wrap gap-3 mt-6">
-                {['Next.js', 'React', 'JavaScript', 'Tailwind CSS', 'Bootstrap', 'Ant Design'].map((tech, index) => (
+                {['Next.js', 'React', 'Redux Toolkit', 'JavaScript', 'Tailwind CSS', 'Bootstrap', 'Ant Design'].map((tech, index) => (
                   <span key={index} className="bg-gray-700 text-red-400 px-3 py-1 rounded-full text-sm">
                     {tech}
                   </span>
